@@ -1,0 +1,14 @@
+<form>
+  <div class="form-group">
+    {{#power-select
+     selected=selectedBillType
+     options=billTypes
+    onchange=(action "chooseBill")
+    as |name|
+   }}
+   {{name}}
+
+   {{/power-select}}
+  </div>
+  <button class="btn btn-success" {{action 'billTypeLookup' }}>Submit</button>
+</form>

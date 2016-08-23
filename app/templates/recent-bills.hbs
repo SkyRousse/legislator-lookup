@@ -1,0 +1,5 @@
+<ul>
+  {{#each model as |bill|}}
+    <li>Introduced on: {{bill.introduced_on}} Bill: {{bill.bill_id}} ({{bill.bill_type}}) - Title: {{bill.official_title}}<br>Link: <a href={{bill.urls.congress}}>Link to bill text</a></li>
+  {{/each}}
+</ul>

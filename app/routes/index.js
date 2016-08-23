@@ -12,8 +12,10 @@ export default Ember.Route.extend({
       this.transitionTo('sub-committees', params);
     },
     billLookup(params) {
-      debugger;
       this.transitionTo('bills', params.query);
+    },
+    billTypeLookup(params) {
+      this.transitionTo('recent-bills', params.billType);
     }
   }
 });
