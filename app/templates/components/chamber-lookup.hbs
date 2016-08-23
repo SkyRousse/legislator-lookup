@@ -1,0 +1,29 @@
+<h1>Chamber Lookup</h1>
+
+<form>
+  <!-- <div class="form-group"> -->
+    {{#power-select
+     selected=selectedChamber
+     options=chambers
+    onchange=(action "chooseChamber")
+    as |name|
+   }}
+   {{name}}
+
+   {{/power-select}}
+  <!-- </div> -->
+  <button class="btn btn-success" {{action 'chamberLookup' }}>Submit</button>
+</form>
+
+<!-- <form>
+  <div class="form-group">
+    <label for="chamber">Chamber</label>
+    <select class="chamber" name="chamber">
+      <option value="house">House</option>
+      <option value="senate">Senate</option>
+      <option value="joint">Joint</option>
+    </select>
+
+  </div>
+  <button class="btn btn-success" {{action 'chamberLookup'}}>Submit</button>
+</form> -->

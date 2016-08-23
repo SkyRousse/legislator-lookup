@@ -7,4 +7,4 @@ export default Ember.Route.extend({
       return responseJSON.results;
     });
   }
-});
+}); 
