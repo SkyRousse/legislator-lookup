@@ -7,6 +7,10 @@ export default Ember.Route.extend({
     },
     chamberLookup(params) {
       this.transitionTo('committee', params.chamber);
+    },
+    subCommitteeLookup(params) {
+      debugger;
+      this.transitionTo('sub-committees', params)
     }
   }
 });
