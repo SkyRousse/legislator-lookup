@@ -9,8 +9,11 @@ export default Ember.Route.extend({
       this.transitionTo('committee', params.chamber);
     },
     subCommitteeLookup(params) {
+      this.transitionTo('sub-committees', params);
+    },
+    billLookup(params) {
       debugger;
-      this.transitionTo('sub-committees', params)
+      this.transitionTo('bills', params.query);
     }
   }
 });
