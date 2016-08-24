@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('sub-committees', {path: '/sub-committees/:parentId'});
   this.route('bills', {path: '/bills/:query'});
   this.route('recent-bills', {path: '/recent-bills/:billType'});
+  this.route('store');
 });
 
 export default Router;
